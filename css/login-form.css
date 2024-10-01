@@ -1,0 +1,122 @@
+.login-hero-section {
+    background-color: #0f022d;
+}
+.login-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.56);
+    background-color: #0f022d87;
+    padding: 50px 100px;
+    gap: 24px;
+    z-index: 6;
+    position: relative;
+}
+.login-form-title {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 26px;
+}
+.login-button {
+    background-color: #e91e63 !important;
+    cursor: pointer;
+}
+.login-button:active {
+    background-color: #89113a !important;
+}
+.login-form-section {
+    background-color: #1f1b38;
+/*     background: linear-gradient(135deg, #431a82, #2e1255); */
+padding: 48px;
+width: 100%;
+max-width: 40%;
+z-index: 99;
+position: inherit;
+}
+.input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #413b66;
+    color: #fff;
+    font-size: 20px;
+}
+.password-box {
+    position: relative;
+}
+.checkbox-input {
+  appearance: auto;
+  -webkit-appearance: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  appearance: auto;
+  border-radius: 4px;
+/*     border: 1px solid #424774; */
+/*   background-color:  #1f1b38; */
+}
+
+.checkbox-input {
+}
+.checkbox-input:checked::before {
+  content: '\2713';
+  display: block;
+  text-align: center;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 4px;
+}
+.login-info {
+    padding: 40px;
+    color: #fff;
+    background: linear-gradient(135deg, #431a82, #2e1255);
+}
+.login-info-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-4-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.large-gradient-circle {
+  width: 75vw;
+  height: 75vw;
+  border-radius: 100%;
+  background: radial-gradient(circle at right, #ffaa33, #8c2ea0, #240d69, #0a0112, #09030f);
+  position: absolute;
+  top: 0;
+  transform: translateX(-40%);
+}
+
+.small-gradient-circle {
+  width: 75vw;
+  height: 75vw;
+  border-radius: 100%;
+  background: radial-gradient(circle at right, #09030f, #0a0112, #2f1582, #8c2ea0);
+  position: absolute;
+  top: -55%;
+  right: -40%;
+}
+.login-info-link{
+    color: #e91e63;
+}

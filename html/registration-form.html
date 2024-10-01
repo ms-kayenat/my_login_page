@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="../css/registration-form.css">
+    <link rel="stylesheet" type="text/css" href="../global-css.css">
+    <link rel="stylesheet" type="text/css" href="../responsive-css.css">
+</head>
+<body>
+    <section class="section registration-form-section">
+        <div class="container">
+            <div class="wrapper">
+                <div class="registration-form">
+                    <form id="registrationForm" onsubmit="return registrationFormValidation()" name="registration_form" method="post" accept-charset="utf-8">
+                        <div class="reg-form-header">
+                            <div class="reg-form-texts">
+                                <h1 class="reg-form-title-text">Register Here</h1>
+                                <p class="reg-form-subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reg-form-body">
+                            <div class="details-input reg-form-names">
+                                <div class="name-input">
+                                    <label class="reg-form-lebel" for="fname">First Name</label>
+                                    <input type="text" name="fname" id="fname" placeholder="Enter first name">
+                                    <p class="error"></p>
+                                </div>
+
+                                <div class="name-input">
+                                    <label class="reg-form-lebel" for="lname">Last Name</label>
+                                    <input type="text" name="lname" id="lname" placeholder="Enter last name">
+                                    <p class="error"></p>
+                                </div>
+                            </div>
+
+                            <div class="details-input family-details">
+                                <div class="name-input">
+                                    <label class="reg-form-lebel" for="mother_name">Mother's Name</label>
+                                    <input type="text" name="mother_name" id="mother_name" placeholder="Mother's Name">
+                                    <p class="error"></p>
+
+                                </div> 
+                                <div class="name-input">
+                                    <label class="reg-form-lebel" for="father_name">Father's Name</label>
+                                    <input type="text" name="father_name" id="father_name" placeholder="Father's Name">
+                                    <p class="error"></p>
+
+                                </div>     
+                            </div>
+
+                            <div class="details-input reg-form-contacts">
+                                <div class="email-input">
+                                    <label class="reg-form-lebel" for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="123@gmail.com">
+                                    <p class="error"></p>
+
+                                </div>
+                                <div class="phone-input">
+                                    <label class="reg-form-lebel" for="phoneNumber">Phone Number</label>
+                                    <input type="text" name="phone_number" id="phone_number" placeholder="1234567890">
+                                    <p class="error"></p>
+
+                                </div>
+                            </div>
+
+                            <div class="addresses">
+                                <div class="country-input">
+                                    <select class="form-selects" name="country">
+                                        <option value="#" selected>Select your Country</option>
+                                        <option value="India">India</option>
+                                        <option value="UAE">UAE</option>
+                                        <option value="USA">USA</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Turkey">Turkey</option>
+                                        <option value="Oman">Oman</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                    </select>
+                                    <p class="error"></p>
+
+                                </div>
+
+                                <div class="state-input">
+                                    <select class="form-selects" name="state">
+                                        <option value="#" selected>Select your State</option>
+                                        <option value="West Bengal">West Bengal</option>
+                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option value="Jharkhand">Jharkhand</option>
+                                        <option value="Odisa">Odisa</option>
+                                    </select>
+                                    <p class="error"></p>
+
+                                </div>
+
+                                <div class="district-input">
+                                    <select class="form-selects" name="district">
+                                        <option value="#" selected>Select your District</option>
+                                        <option value="North 24 PGS">North 24 PGS</option>
+                                        <option value="South 24 PGS">South 24 PGS</option>
+                                        <option value="Nadia">Nadia</option>
+                                        <option value="Hooghly">Hooghly</option>
+                                    </select>
+                                    <p class="error"></p>
+                                    
+                                </div>
+                            </div>
+                            <div class="education-information">
+                                <div class="highest-qualification-input">
+                                    <label class="reg-form-lebel" for="lastqualification">Last Qualification :</label>
+
+                                    <div>
+                                        <input type="radio" name="lastqualification" id="secondary" class="auto">
+                                        <span>10th</span>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="lastqualification" id="higher_secondary" class="auto">
+                                        <span>12th</span>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="lastqualification" id="graduation" class="auto">
+                                        <span>Graduation</span>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="lastqualification" id="post_graduation" class="auto">
+                                        <span>Post Graduation</span>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="lastqualification" id="doctorate" class="auto">
+                                        <span>Doctorate</span>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="gender">
+                                <div class="gender-input">
+                                    <label class="reg-form-lebel" for="gender">Gender :</label>
+
+                                    <div>
+                                        <input type="radio" name="gender" id="female" class="auto">
+                                        <span>Female</span>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="gender" id="male" class="auto">
+                                        <span>Male</span>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="gender" id="others" class="auto">
+                                        <span>Others</span>
+                                    </div>
+
+                                </div>
+                            </div>    
+                            <div class="reg-form-buttons">
+                                <button type="reset">Reset</button>
+                                <button type="submit" onclick="submitForm(event)">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="../assets/js/registration.js"></script>
+</body>
+</html>

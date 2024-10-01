@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/login-form.css">
+	<link rel="stylesheet" type="text/css" href="global-css.css">
+	<link rel="stylesheet" type="text/css" href="responsive-css.css">
+</head>
+<body>
+	<section class="section login-hero-section">
+		<div class="section-4-background">
+			<div class="large-gradient-circle"></div>
+			<div class="small-gradient-circle"></div>
+		</div>
+		<div class="container">
+			<div class="wrapper">
+				<div class="login-section">
+					<div class="login-form-section">
+						<h2 class="login-form-title">Login</h2>
+						<div class="login-form">
+							<form method="post" name="login_form" onsubmit="return form_validation()">
+								<div>
+									<input type="text" placeholder="Email" name="email" id="email" class="input">
+									<p id="email_error" style="color: red;"></p>
+								</div>
+								<div class="password-box">
+									<input type="password" placeholder="Password" name="password" id="password" class="input"> 
+									<img class="checkbox-input" src="assets/images/eye-close.svg" onclick="togglePassword()" id="eyeicon">
+									<p id="password_error" style="color: red;"></p>
+								</div>
+								<button type="submit" class="login-button input">Login</button> 
+							</form>
+						</div>
+					</div>	
+
+					<div class="login-info">
+						<div class="login-info-texts">
+							<h2 class="login-form-title ">Welcome.</h2>
+							<p class="login-info-subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, arcu vitae euismod gravida.
+							</p>
+							<div class="login-info-footer">
+								<p class="login-info-subtitle">Not a member? 
+									<a class="login-info-link" href="html/registration-form.html" target="_blank">Sign up now</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="assets/js/login-page.js"></script>
+</body>
+</html>
